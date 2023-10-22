@@ -14,3 +14,6 @@ function calculadora(numero1, operador, numero2){
   console.log(resultado);
 }
 calculadora(2,"*",5);
+calculadora(6,"/",2);
+calculadora(8,"+",4);
+calculadora(9,"-",1);
