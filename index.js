@@ -1,19 +1,12 @@
-function calculadora(numero1, operador, numero2){
-  let resultado;
-  switch(operador){
-    case "+": resultado = numero1 + numero2;
-      break;
-    case "-": resultado = numero1 - numero2;
-      break;
-    case "*": resultado = numero1 * numero2;
-      break;
-    case "/": resultado = numero1 / numero2;
-      break;
-    default: resultado = "Operador inválido";
+function valorMaximo(){
+  numeros = [1,2,3,4,5,6,7,8,20,10];
+  max = 0;
+
+  for(i = 0; i < numeros.length; i++){
+    if(numeros[i] > max){
+      max = numeros[i];
+    }
   }
-  console.log(resultado);
+  console.log(max);
 }
-calculadora(2,"*",5);
-calculadora(6,"/",2);
-calculadora(8,"+",4);
-calculadora(9,"-",1);
+valorMaximo();
