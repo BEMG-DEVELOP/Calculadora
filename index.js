@@ -1,14 +1,13 @@
-function concatenacion(valor1, valor2){
-  let resta = valor1 - valor2;
-  let suma = valor1 + valor2;
-  let resultado = String(resta) + String(suma);
-  
-  console.log(resultado);
+function multiplo(resultados){
+  let multiplicados = [3,4,5,6,7,8];
+  let factor =  resultados[0] / multiplicados[0];
+  let tamano = multiplicados.length;
+  for(i = 0;i < tamano; i++){
+    let temporal = resultados[i] / multiplicados[i];
+    if(factor != temporal){
+      return false;
+    }
+    console.log(temporal);
+  }
 }
-
-concatenacion(5,4);
-concatenacion(8,2);
-concatenacion(10,8);
-concatenacion(12,9);
-concatenacion(18,2);
-concatenacion(21,5);
+multiplo([27,36,45,54,63,72]);
